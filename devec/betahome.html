@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gygy Ink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="betahome.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <script></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Take Back';
+            src: url('Take Back.ttf') format('truetype');
+        }
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            zoom: 75%;
+        }
+
+
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        #hide-footer-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+
+        }
+
+
+
+
+
+        .footer-links {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .footer-links li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .footer-links li:last-child {
+            margin-right: 0;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+            padding: 2px;
+        }
+
+        .footer-links a:hover {
+            border-bottom: none;
+            text-decoration: underline;
+        }
+
+        .logo:hover {
+            animation: spin 0.5s linear;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .titre {
+            margin-top: 10px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .cookie-consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #f2f2f2;
+            padding: 20px;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button a {
+            text-decoration: none;
+        }
+
+        #reject-all {
+            background-color: #f44336;
+        }
+
+        #learn-more {
+            background-color: #2196f3;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <p id='head1' class='header'>GygyInk</p>
+    <p id='head2' class='header'>is proud</p>
+    <p id='head3' class='header'>to open her doors</p>
+    <p id='head4' class='header'>into GygyInk's universe</p>
+    <p id='head5' class='header'>Enjoy her work! </p>
+    <button class="glow-on-hover" type="button" id="bis"><a href="index.html">Welcome</a></button>
+    <div class='light x1'></div>
+    <div class='light x2'></div>
+    <div class='light x3'></div>
+    <div class='light x4'></div>
+    <div class='light x5'></div>
+    <div class='light x6'></div>
+    <div class='light x7'></div>
+    <div class='light x8'></div>
+    <div class='light x9'></div>
+
+    <!-- <h1>We love what we do!</h1> -->
+
+
+
+    <footer>
+        <p>© 2023 Gygy's World. Tous droits réservés.</p>
+        <ul class="footer-links">
+            <li><a href="#index">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="hide-footer-btn">x</button>
+    </footer>
+
+    <script>
+        const hideButton = document.getElementById('hide-footer-btn');
+        const footer = document.querySelector('footer');
+        hideButton.addEventListener('click', () => {
+            footer.style.display = 'none';
+        });
+    </script>
+    <script src="betahome.js"></script>
+</body>
+
+</html>
