@@ -1561,13 +1561,108 @@ a.btn:active,
 
 @media only screen and (max-width: 768px) {
 
-    .skill-center {
+    .skills-center {
 
         grid-template-columns: 1fr;
+        gap: 3rem;
+        /* margin-right: 50px; */
+
+    }
+
+    .left {
+
+        text-align: center;
+
+    }
+
+
+
+    .left img {
+
+        height: 40rem;
+
+        max-width: 90%;
+
+    }
+    .right h1 {
+
+        font-size: 2rem;
+
+    }
+
+    .right h3 {
+        margin-right: 50px;
+    }
+
+
+
+    .right p {
+
+        font-size: 1.5rem;
+
+    }
+
+
+
+    a.btn {
+
+        padding: .6rem 2rem;
+
+    }
+
+
+
+    .left img {
+
+        height: 40rem;
+
+        max-width: 25rem;
 
     }
 
 }
+
+@media only screen and (max-width: 996px) {
+
+    .right h1 {
+
+        font-size: 2rem;
+
+    }
+
+
+
+    .right p {
+
+        font-size: 1.5rem;
+
+    }
+
+
+
+    a.btn {
+
+        padding: .7rem 1.8rem;
+
+    }
+
+
+
+    .left img {
+
+        height: 40rem;
+
+        max-width: 25rem;
+
+    }
+
+
+
+}
+
+
+
+
 
 /* Teams */
 
